@@ -1,6 +1,6 @@
 var typed = new Typed(".auto-type", {
-    strings: ["Programmer", "Game Dev", "Freelancer", "Gamer", "Game Designer"],
-    typeSpeed: 250,
-    backSpeed: 210,
+    strings: ["Programming", "Game Dev", "Awesome Projects", "Vibe Code", "Experiments"],
+    typeSpeed: 190,
+    backSpeed: 50,
     loop: true
 })

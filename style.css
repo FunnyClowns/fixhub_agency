@@ -691,7 +691,7 @@ section{
     border-radius: 5px;
     background: #c1bebe;
     text-align: center;
-    padding: 30px 20px;
+    padding: 40px 15px;
     transition: all .55s ease;
 }
 
@@ -730,11 +730,15 @@ section{
     color: rgb(85, 84, 84);
   }
 
-.html-div:hover:before {
+.card-img{
+    border-radius: 20%;
+}
+
+.member-card:hover:before {
     opacity: 1;
   }
   
-  .html-div:before {
+  .member-card:before {
     background: linear-gradient(
       45deg,
       transparent 5%,
@@ -749,188 +753,15 @@ section{
     transition: opacity 400ms;
     z-index: -1;
   }
-.html-div:hover {
+.member-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0,0,0,.2);
 }
 
-.html-div:hover .html-img {
+.member-card:hover .card-img {
     filter: saturate(1);
 }
 
-
-.css-div:hover:before {
-    opacity: 1;
-  }
-  
-  .css-div:before {
-    background: linear-gradient(
-      45deg,
-      transparent 5%,
-      rgb(225, 224, 222) 50%,
-      transparent 99%
-    );
-    border-radius: inherit;
-    content: "";
-    inset: 0px;
-    opacity: 0;
-    position: absolute;
-    transition: opacity 400ms;
-    z-index: -1;
-  }
-.css-div:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,.2);
-}
-
-.css-div:hover .css-img {
-    filter: saturate(1);
-}
-
-.js-div:hover:before {
-    opacity: 1;
-  }
-  
-  .js-div:before {
-    background: linear-gradient(
-      45deg,
-      transparent 5%,
-      rgb(225, 224, 222) 50%,
-      transparent 99%
-    );
-    border-radius: inherit;
-    content: "";
-    inset: 0px;
-    opacity: 0;
-    position: absolute;
-    transition: opacity 400ms;
-    z-index: -1;
-  }
-
-.js-div:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,.2);
-}
-
-.js-div:hover .js-img {
-    filter: saturate(1);
-}
-
-.lua-div:hover:before {
-    opacity: 1;
-  }
-  
-  .lua-div:before {
-    background: linear-gradient(
-      45deg,
-      transparent 5%,
-      rgb(225, 224, 222) 50%,
-      transparent 99%
-    );
-    border-radius: inherit;
-    content: "";
-    inset: 0px;
-    opacity: 0;
-    position: absolute;
-    transition: opacity 400ms;
-    z-index: -1;
-  }
-
-.lua-div:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,.2);
-}
-
-.lua-div:hover .lua-img {
-    filter: saturate(1);
-}
-
-.py-div:hover:before {
-    opacity: 1;
-  }
-  
-  .py-div:before {
-    background: linear-gradient(
-      45deg,
-      transparent 5%,
-      rgb(225, 224, 222) 50%,
-      transparent 99%
-    );
-    border-radius: inherit;
-    content: "";
-    inset: 0px;
-    opacity: 0;
-    position: absolute;
-    transition: opacity 400ms;
-    z-index: -1;
-  }
-
-.py-div:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,.2);
-}
-
-.py-div:hover .py-img {
-    filter: saturate(1);
-}
-
-.cpp-div:hover:before {
-    opacity: 1;
-  }
-  
-  .cpp-div:before {
-    background: linear-gradient(
-      45deg,
-      transparent 5%,
-      rgb(225, 224, 222) 50%,
-      transparent 99%
-    );
-    border-radius: inherit;
-    content: "";
-    inset: 0px;
-    opacity: 0;
-    position: absolute;
-    transition: opacity 400ms;
-    z-index: -1;
-  }
-
-.cpp-div:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,.2);
-}
-
-.cpp-div:hover .cpp-img {
-    filter: saturate(1);
-}
-
-.blender-div:hover:before {
-    opacity: 1;
-  }
-  
-  .blender-div:before {
-    background: linear-gradient(
-      45deg,
-      transparent 5%,
-      rgb(225, 224, 222) 50%,
-      transparent 99%
-    );
-    border-radius: inherit;
-    content: "";
-    inset: 0px;
-    opacity: 0;
-    position: absolute;
-    transition: opacity 400ms;
-    z-index: -1;
-  }
-
-.blender-div:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,.2);
-}
-
-.blender-div:hover .blender-img {
-    filter: saturate(1);
-}
 
 @media(max-width:770px) {
     .skills {
