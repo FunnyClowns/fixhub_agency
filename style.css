@@ -124,6 +124,11 @@ section {
     z-index: 10001;
     cursor: pointer;
     display: none;
+    transition: all 0.3s ease;
+}
+
+#menu-icon:hover {
+    color: #3f3c3c;
 }
 
 #home-icon {
@@ -798,38 +803,63 @@ section {
     }
 }
 
-/* Medium Screens - 990px and below */
-@media (max-width: 990px) {
+/* Mobile Screens - 768px and below */
+@media (max-width: 768px) {
     #menu-icon {
         display: block;
     }
     
     .navlist {
         position: absolute;
-        margin-top: 30px;
+        margin-top: 0;
         top: 100%;
-        right: -1000%;
-        width: 30%;
-        height: 40vh;
-        border-radius: 8px;
-        background: #ecebeb;
+        right: -100%;
+        width: 250px;
+        min-height: 40vh;
+        background: linear-gradient(135deg, #f8f8f8 0%, #ecebeb 100%);
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding: 50px 20px;
-        transition: all 0.55s ease;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        border-radius: 0 0 0 3px;
+        padding: 30px 20px;
+        transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 0 15px;
+        backdrop-filter: blur(10px);
     }
     
     .navlist a {
         margin-left: 0;
         display: block;
-        margin: 10px 0;
+        margin: 15px 0;
+        font-size: 18px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        width: 100%;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    
+    .navlist a:hover {
+        background: rgba(63, 60, 60, 0.1);
+        transform: translateX(5px);
     }
     
     .navlist.open {
         right: 0;
+    }
+}
+
+/* Small Mobile Screens - 480px and below */
+@media (max-width: 480px) {
+    .navlist {
+        width: 200px;
+        padding: 25px 15px;
+    }
+    
+    .navlist a {
+        font-size: 16px;
+        margin: 12px 0;
+        padding: 8px 12px;
     }
 }
 
